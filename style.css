@@ -1,0 +1,143 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100%;
+    color: #000;
+    font-family:monospace;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+header {
+    position: fixed;
+    background: #000;
+    color: #fff;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    height: 5.5rem;
+    z-index: 10;
+}
+
+strong {
+    font-weight: 700;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+header div {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+    line-height: 1.3;
+}
+
+footer {
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.title {
+    font-family: 'Fugaz One', cursive;
+    text-transform: uppercase;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    padding: 0 20px;
+    display: flex;
+    height: 100%;
+    margin: auto;
+    width: 90%;
+}
+
+.left, .right {
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.right {
+    padding-left: 10%;
+}
+
+.left img {
+    display: block;
+    width: auto;
+    height: 80vh;
+}
+
+.circle {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 100vh;
+    height: 100vh;
+    top: 25%;
+    right: 55%;
+}
+
+.right .name {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+}
+
+.right h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.right .underline {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    height: 1.5rem;
+    z-index: -1;
+}
+
+.right p {
+    font-size: 1.2rem;
+}
+
+.right p span {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.midoriya .underline, .midoriya .circle {
+    background-color: #a05aff;
+}
+
+.bakugo .underline, .bakugo .circle {
+    background-color: #f79e12;
+}
+
+.todoroki .underline, .todoroki .circle {
+    background-color: #5989f9;
+}
+
+
